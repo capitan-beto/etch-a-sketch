@@ -1,14 +1,7 @@
 let userInput = prompt("type");
 let input = Number(userInput);
-let clmn = input * input;
  
-
-
-/*const childDiv = document.createElement("div");
-parentDiv.classList.add("child-div");
-document.body.appendChild(childDiv);*/
-
-function  setGrid(input, clmn){
+function  setGrid(input){
     const container = document.createElement("div");
     container.classList.add("container");
     document.body.appendChild(container);
@@ -27,4 +20,7 @@ function  setGrid(input, clmn){
     }
 }
 
-setGrid(input, clmn);
+
+
+setGrid(input);
+
