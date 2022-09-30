@@ -24,7 +24,7 @@ body{
     aspect-ratio: 1/1;
     flex: 0 1 ;
     align-content: center;
-    border: solid whitesmoke .001rem;
+    border: solid whitesmoke .003rem;
     box-sizing: content-box;
 }
 
