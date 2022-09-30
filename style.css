@@ -1,0 +1,30 @@
+body{
+    background-color: wheat;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 10rem;
+    aspect-ratio: 1/1;
+}
+
+.row{
+    display: flex;
+    flex: 0 1 10rem;
+    background-color: gray;
+    align-content: center;
+    text-align: center;
+}
+
+/*set this class as grid-(size of grid)*/
+
+.column{
+    aspect-ratio: 1/1;
+    flex: 0 1 ;
+    align-content: center;
+    border: solid whitesmoke .001rem;
+    box-sizing: content-box;
+}
+
