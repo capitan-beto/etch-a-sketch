@@ -10,7 +10,12 @@ function randomColor() {
     return 'rgb(' + color.join(', ') + ')';
 }     
 
- 
+
+function sushiColor(){
+    let color = [];
+    
+}
+
 function  setGrid(input){
     if (input > 100){
         alert("Dumb-o! the max is 100");
