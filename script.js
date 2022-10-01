@@ -2,6 +2,8 @@ let userInput = prompt("Type a number", "Max 100");
 let input = Number(userInput);
 let newInput = input;
 
+
+
 function randomColor() {
     let color = [];
     for (let i = 0; i < 3; i++) {
@@ -9,12 +11,6 @@ function randomColor() {
     }
     return 'rgb(' + color.join(', ') + ')';
 }     
-
-
-function sushiColor(){
-    let color = [];
-    
-}
 
 function  setGrid(input){
     if (input > 100){
@@ -27,6 +23,7 @@ function  setGrid(input){
         for (let i = 0; i < input; i++){
             const parentDiv = document.createElement("div");
             parentDiv.classList.add("row");
+            parentDiv.style.backgroundColor = "white"
             parentDiv.textContent = "";
             container.appendChild(parentDiv);
 
@@ -49,8 +46,7 @@ function  setGrid(input){
                 colorGrid.addEventListener("click", () => {
                     childDiv.style.backgroundColor = "white";
                     childDiv.addEventListener("mouseover", () => {
-                        childDiv.style.backgroundColor = randomColor();
-                        {once:true}
+                        childDiv.style.color = randomColor();
                     })
                 })
             } 
@@ -60,6 +56,23 @@ function  setGrid(input){
     }
 }
 
+
+
 setGrid(input);
+
+const setGreen = document.querySelector(".set-earth");
+setGreen.addEventListener("click", () => {
+    document.body.style.backgroundColor = "rgb(225, 255, 177)";
+})
+
+const setLilac= document.querySelector(".set-lilac");
+setLilac.addEventListener("click", () => {
+    document.body.style.backgroundColor = "rgb(198, 137, 198)";
+})
+
+const setSalmon = document.querySelector(".set-salmon");
+setSalmon.addEventListener("click", () => {
+    document.body.style.backgroundColor = "rgb(255, 148, 148)";
+})
 
 

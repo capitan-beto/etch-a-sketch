@@ -1,5 +1,5 @@
 body{
-    background-color: wheat;
+    background-color: rgb(238, 241, 255);
     display: flex;
     justify-content: space-around;
 }
@@ -10,6 +10,14 @@ button{
     width: 2rem;
     justify-content: center;
     margin: .5rem;
+    border: none;
+
+}
+
+button:hover{
+    opacity: .9;
+    transition: opacity 1ms ease;
+    font-weight: bold;
 }
 
 .menu{
@@ -40,7 +48,6 @@ button{
 .row{
     display: flex;
     flex: 0 1 10rem;
-    background-color: white;
     align-content: center;
     text-align: center;
 }
