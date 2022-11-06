@@ -1,8 +1,8 @@
 let userInput = prompt("Type a number", "Max 100");
 let input = Number(userInput);
 let newInput = input;
-
-
+const bnwGrid = document.querySelector(".set-bnw");  
+const colorGrid = document.querySelector(".set-color");
 
 function randomColor() {
     let color = [];
@@ -12,7 +12,7 @@ function randomColor() {
     return 'rgb(' + color.join(', ') + ')';
 }     
 
-function  setGrid(input){
+function setGrid(input){
     if (input > 100){
         alert("Dumb-o! the max is 100");
         return;
@@ -63,24 +63,17 @@ function  setGrid(input){
 
 setGrid(input);
 
-const setGreen = document.querySelector(".set-green");
-setGreen.addEventListener("click", () => {
-    document.body.style.backgroundColor = "rgb(225, 255, 177)";
+const buttons = document.querySelectorAll("button");
+buttons.forEach((item) => {
+    item.addEventListener("click", () =>{
+        if(item.id === "salmon"){
+            document.body.style.backgroundColor = "rgb(255, 148, 148)";
+        } else if(item.id == "lilac"){
+            document.body.style.backgroundColor = "rgb(198, 137, 198)";
+        } else if(item.id == "green"){
+            document.body.style.backgroundColor = "rgb(225, 255, 177)";
+        } else if(item.id == "lightblue"){
+            document.body.style.backgroundColor = "rgb(238, 241, 255)";
+        }
+    })
 })
-
-const setLilac= document.querySelector(".set-lilac");
-setLilac.addEventListener("click", () => {
-    document.body.style.backgroundColor = "rgb(198, 137, 198)";
-})
-
-const setSalmon = document.querySelector(".set-salmon");
-setSalmon.addEventListener("click", () => {
-    document.body.style.backgroundColor = "rgb(255, 148, 148)";
-})
-
-const setBasic = document.querySelector(".set-basic");
-setBasic.addEventListener("click", () => {
-    document.body.style.backgroundColor = "rgb(238, 241, 255)";
-})
-
-

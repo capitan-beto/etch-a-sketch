@@ -12,6 +12,11 @@ button{
     margin: .5rem;
     border: none;
     text-transform: uppercase;
+    padding: 3px;
+}
+
+input, label{
+    margin-top: 5rem;
 }
 
 button:hover{
@@ -45,19 +50,19 @@ button:hover{
     border-radius: 100%;
 }
 
-[class^="set"]:nth-child(1){
+.background:nth-child(1){
     background-color: rgb(255, 148, 148);
 }
 
-[class^="set"]:nth-child(2){
+.background:nth-child(2){
     background-color: rgb(198, 137, 198);
 }
 
-[class^="set"]:nth-child(3){
+.background:nth-child(3){
     background-color: rgb(225, 255, 177);
 }
 
-[class^="set"]:nth-child(4){
+.background:nth-child(4){
     background-color: rgb(238, 241, 255);
 }
 
