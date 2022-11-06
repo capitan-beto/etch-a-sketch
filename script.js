@@ -36,6 +36,8 @@ function  setGrid(input){
             });
             const bnwGrid = document.querySelector(".set-bnw");  
             bnwGrid.addEventListener("click", () =>{
+                bnwGrid.style.fontWeight = "bold";
+                colorGrid.style.fontWeight = "normal";
                 childDiv.style.backgroundColor = "white";
                 childDiv.addEventListener("mouseover", () =>{
                         childDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
@@ -43,6 +45,8 @@ function  setGrid(input){
             })
             const colorGrid = document.querySelector(".set-color");
             colorGrid.addEventListener("click", () => {
+                bnwGrid.style.fontWeight = "normal";
+                colorGrid.style.fontWeight = "bold";
                 childDiv.style.backgroundColor = "white";
                 childDiv.addEventListener("mouseover", () => {
                     childDiv.style.backgroundColor = randomColor();
