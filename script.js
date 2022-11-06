@@ -26,30 +26,29 @@ function  setGrid(input){
             parentDiv.style.backgroundColor = "white"
             parentDiv.textContent = "";
             container.appendChild(parentDiv);
-
-            for (let i = 0; i < input; i++){
-                const childDiv = document.createElement("div");
-                childDiv.classList.add("column");
-                childDiv.textContent = "";
-                parentDiv.appendChild(childDiv);
-                childDiv.addEventListener("mouseover", function(){
-                    childDiv.style.backgroundColor = randomColor();
-                });
-                const bnwGrid = document.querySelector(".set-bnw");  
-                bnwGrid.addEventListener("click", () =>{
-                    childDiv.style.backgroundColor = "white";
-                    childDiv.addEventListener("mouseover", () =>{
-                            childDiv.style.backgroundColor = "rgba(0,0,0,1)";
-                        })
-                })
-                const colorGrid = document.querySelector(".set-color");
-                colorGrid.addEventListener("click", () => {
-                    childDiv.style.backgroundColor = "white";
-                    childDiv.addEventListener("mouseover", () => {
-                        childDiv.style.color = randomColor();
+        for (let i = 0; i < input; i++){
+            const childDiv = document.createElement("div");
+            childDiv.classList.add("column");
+            childDiv.textContent = "";
+            parentDiv.appendChild(childDiv);
+            childDiv.addEventListener("mouseover", function(){
+                childDiv.style.backgroundColor = randomColor();
+            });
+            const bnwGrid = document.querySelector(".set-bnw");  
+            bnwGrid.addEventListener("click", () =>{
+                childDiv.style.backgroundColor = "white";
+                childDiv.addEventListener("mouseover", () =>{
+                        childDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
                     })
+            })
+            const colorGrid = document.querySelector(".set-color");
+            colorGrid.addEventListener("click", () => {
+                childDiv.style.backgroundColor = "white";
+                childDiv.addEventListener("mouseover", () => {
+                    childDiv.style.backgroundColor = randomColor();
                 })
-            } 
+            })
+        } 
         }
     } else {
         document.location.reload();
