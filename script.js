@@ -38,7 +38,7 @@ function  setGrid(input){
             bnwGrid.addEventListener("click", () =>{
                 childDiv.style.backgroundColor = "white";
                 childDiv.addEventListener("mouseover", () =>{
-                        childDiv.style.backgroundColor = "rgba(0, 0, 0, .1)";
+                        childDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
                     })
             })
             const colorGrid = document.querySelector(".set-color");
@@ -72,6 +72,11 @@ setLilac.addEventListener("click", () => {
 const setSalmon = document.querySelector(".set-salmon");
 setSalmon.addEventListener("click", () => {
     document.body.style.backgroundColor = "rgb(255, 148, 148)";
+})
+
+const setBasic = document.querySelector(".set-basic");
+setBasic.addEventListener("click", () => {
+    document.body.style.backgroundColor = "rgb(238, 241, 255)";
 })
 
 
