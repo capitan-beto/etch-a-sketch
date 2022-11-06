@@ -6,8 +6,8 @@ body{
 
 button{
     display: flex;
-    font-size: 3px;
-    width: 2rem;
+    font-size: 100%;
+    width: 10rem;
     justify-content: center;
     margin: .5rem;
     border: none;
@@ -26,23 +26,25 @@ button:hover{
     justify-content: center;
 }
 
-.top-button{
+.menu:first-child{
     display: flex;
     justify-content: space-around;
     gap: .5rem;
 }
 
-.change-background{
+.menu > div:last-child{
     display: flex;
+    flex-direction: row;
     gap: .5rem
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    width: 10rem;
-    height: 10rem;
+    width: calc(40vw - 20px);
+    height: calc((40vw - 20px));
     aspect-ratio: 1/1;
+    margin-top: 1rem;
 }
 
 .row{
@@ -51,8 +53,6 @@ button:hover{
     align-content: center;
     text-align: center;
 }
-
-/*set this class as grid-(size of grid)*/
 
 .column{
     aspect-ratio: 1/1;
@@ -65,4 +65,9 @@ button:hover{
     opacity: .5;
     transition: opacity 1ms ease-in-out;
 }
+
+.menu{
+    width: min(50%, 7rem);
+}
+
 
