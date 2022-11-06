@@ -20,10 +20,13 @@ button:hover{
     font-weight: bold;
 }
 
+
 .menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 0 0 50%;
+    align-items: center;
 }
 
 .menu:first-child{
@@ -34,8 +37,24 @@ button:hover{
 
 .menu > div:last-child{
     display: flex;
-    flex-direction: row;
-    gap: .5rem
+}
+
+.menu > div:last-child > button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+[class^="set"]:nth-child(1){
+    background-color: rgb(255, 148, 148);
+}
+
+[class^="set"]:nth-child(2){
+    background-color: rgb(198, 137, 198);
+}
+
+[class^="set"]:nth-child(3){
+    background-color: rgb(225, 255, 177);
 }
 
 .container{

@@ -38,7 +38,7 @@ function  setGrid(input){
             bnwGrid.addEventListener("click", () =>{
                 childDiv.style.backgroundColor = "white";
                 childDiv.addEventListener("mouseover", () =>{
-                        childDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
+                        childDiv.style.backgroundColor = "rgba(0, 0, 0, .1)";
                     })
             })
             const colorGrid = document.querySelector(".set-color");
@@ -59,7 +59,7 @@ function  setGrid(input){
 
 setGrid(input);
 
-const setGreen = document.querySelector(".set-earth");
+const setGreen = document.querySelector(".set-green");
 setGreen.addEventListener("click", () => {
     document.body.style.backgroundColor = "rgb(225, 255, 177)";
 })
