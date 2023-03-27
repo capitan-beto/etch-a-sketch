@@ -30,7 +30,7 @@ function setGrid(input){
             childDiv.classList.add("column");
             childDiv.textContent = "";
             parentDiv.appendChild(childDiv);
-            childDiv.addEventListener("mouseover", function(){
+            childDiv.addEventListener("dragover", function(){
                 childDiv.style.backgroundColor = randomColor();
             });
             const bnwGrid = document.querySelector(".set-bnw");  
@@ -38,7 +38,7 @@ function setGrid(input){
                 bnwGrid.style.fontWeight = "bold";
                 colorGrid.style.fontWeight = "normal";
                 childDiv.style.backgroundColor = "white";
-                childDiv.addEventListener("mouseover", () =>{
+                childDiv.addEventListener("dragover", () =>{
                         childDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
                     })
             })
@@ -47,7 +47,7 @@ function setGrid(input){
                 bnwGrid.style.fontWeight = "normal";
                 colorGrid.style.fontWeight = "bold";
                 childDiv.style.backgroundColor = "white";
-                childDiv.addEventListener("mouseover", () => {
+                childDiv.addEventListener("dragover", () => {
                     childDiv.style.backgroundColor = randomColor();
                 })
             })
