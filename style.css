@@ -99,4 +99,10 @@ button:hover{
     width: min(50%, 7rem);
 }
 
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
 

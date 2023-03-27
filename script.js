@@ -1,5 +1,3 @@
-// let userInput = prompt("Type a number", "Max 100");
-// let input = Number(userInput);
 let input = getInput();
 let newInput = input;
 const bnwGrid = document.querySelector(".set-bnw");  
