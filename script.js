@@ -85,4 +85,10 @@ function getInput() {
     return input;
 }
 
-// console.log(getInput())
+const set = document.querySelector(".set");
+set.addEventListener("click", () => {
+    const element = document.querySelector(".container");
+    input = getInput();
+    element.remove();
+    setGrid(input);
+})
