@@ -1,5 +1,6 @@
-let userInput = prompt("Type a number", "Max 100");
-let input = Number(userInput);
+// let userInput = prompt("Type a number", "Max 100");
+// let input = Number(userInput);
+let input = getInput();
 let newInput = input;
 const bnwGrid = document.querySelector(".set-bnw");  
 const colorGrid = document.querySelector(".set-color");
@@ -77,3 +78,11 @@ buttons.forEach((item) => {
         }
     })
 })
+
+
+function getInput() {
+    const input  = document.querySelector("#selector").value;
+    return input;
+}
+
+// console.log(getInput())
